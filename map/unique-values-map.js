@@ -12,5 +12,12 @@ const menu = [
 const category = menu.map((cat) => {
     return cat.category
 })
+console.log(category)  // veio várias categorias repetidas.
 
-console.log(category)
+// map pega todas as instâncias
+// new Set apenas retorna valores unicos
+
+const categoryNewSet = new Set(menu.map((cat) => {
+    return cat.category
+}))
+console.log(categoryNewSet)
