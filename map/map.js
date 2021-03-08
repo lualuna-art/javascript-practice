@@ -33,6 +33,13 @@ console.log(ages2)
 // item.age returns ["26", "24", "25"] in STRINGS
 // item.age * 2 returns [52, 48, 50] in NUMBERS
 
+////////////////////// INTERATING OVER DATA RETURNING AN OBJECT ///////////////////////
 
+const newPeople = people.map((item) => {
+    return {
+        firstName: item.name.toUpperCase(), oldAge: item.age + 20
+    }
+})
+console.log(newPeople)
 
 
