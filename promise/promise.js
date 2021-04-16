@@ -38,3 +38,6 @@ promiseTres
            .then(item => item[0])
            .then(res => console.log(res))
 
+
+           const n = "lua"
+
